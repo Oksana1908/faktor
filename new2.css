@@ -1,0 +1,255 @@
+* {
+    /*box-sizing: border-box;*/
+}
+body{
+    /*background-color: #eaeef0;*/
+    /*display: block;*/
+    width:100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: Arial,Century Gothic, SansSerif;
+    font-size: 16px;
+    margin: 0 5px;
+}
+.general{
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    margin: 20px 20px 30px 10px;
+    height: 100%;
+    padding: 0 4px;
+}
+.header{
+    height: 110px;
+    background-color: #0077D6;
+    /*color: white;*/
+    padding: 10px 0;
+    margin-bottom: 30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo{
+    width: 400px;
+    height: 100px;
+}
+nav{
+    height: 100px;
+    background-color: #0077D6;
+    font-size: 20px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav ul li{
+    display: inline-flex;
+    align-items: center;
+    margin: 30px 60px;
+    list-style-type: disc;
+}
+li{
+   list-style-type: none;
+}
+
+nav ul li a{
+    color: white;
+}
+#call{
+    padding: 10px 30px ;
+    color: #2a57ff;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px 0;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 30px 0;
+    word-spacing: 3px;
+    text-indent: 20px;
+    border: 2px solid #7de4ff;
+    padding-top: 20px;
+}
+.container>article{
+    width: 400px;
+    margin: 10px;
+    word-spacing: 3px;
+}
+#two{
+    width: 500px;
+    height: 380px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+h1{
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+.collection{
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+.collection>div{
+    width: 29,5%;
+    height: 50%;
+    background-color: #7de4ff;
+    margin: 10px;
+}
+.example img{
+    width: 450px;
+    height:280px;
+}
+.example p{
+    text-align: center;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+    cursor: pointer;
+}
+h2{
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+.connection{
+    text-align: center;
+    background-color: #0077D6;
+    /*opacity: 2;*/
+    margin: 30px 10px;
+}
+form{
+    margin-bottom: 20px;
+}
+.form{
+    border: 1px;
+    border-radius: 10px;
+}
+.method{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: start;
+    background-color: #0077D6;
+}
+.method>div{
+    /*border: 1px solid #164e39;*/
+    width: 25%;
+    /*height: 50px;*/
+    margin:  20px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+ li{
+    list-style-type: disc;
+     list-style-position: inside;
+     text-align: left;
+
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    background-color: rgba(50, 50, 50, 0.87);
+    /*background-image: url("http://ternopil.modul-online.com.ua/wp-content/uploads/2019/06/619bb0ae22b956cc477ffa05f353edc7.jpg");*/
+    margin-top: 50px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px){
+    .header >.one,.three{
+        display: none;
+    }
+    .container>article{
+        width: 90%;
+    }
+    nav{
+        justify-content:center ;
+    }
+    nav ul li{
+        margin: 30px 30px;
+    }
+}
+@media (max-width: 968px){
+    nav {
+        justify-content:center ;
+    }
+    nav ul li{
+        margin: 30px 30px;
+    }
+    ul{
+        font-size: 16px;
+        margin: 0 20px;
+        /*display: none;*/
+    }
+    .collection{
+        justify-content: center;
+    }
+}
+@media (max-width: 768px){
+    ul{
+        display: none;
+    }
+    .method ul li{
+        display: none;
+    }
+}
+@media (max-width: 540px){
+        .header{
+            flex-direction: column;
+            align-items: center;
+            height: 140px;
+        }
+        #two{
+        width: 90%;
+        height: 90%;
+        margin: 0;
+    }
+        #call{
+            display: block;
+        }
+}
+@media (max-width: 360px){
+        #logo {
+            width: 280px;
+            height: 80px;
+        }
+        .container{
+            align-items: center;
+        }
+        #two{
+            width:260px;
+            height:170px;
+            padding-right: 20px;
+        }
+        form{
+            flex-direction: column ;
+            flex-wrap: wrap;
+        }
+        .method{
+            flex-direction: column;
+        }
+        .footer{
+            flex-direction: column;
+            align-items: start;
+        }
+}
